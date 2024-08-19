@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    display: grid;
+    place-items: center;
+}
+
+.container_1 {
+    width: 70%;
+    height: 90%;
+    margin-top: 10%;
+    display: grid;
+    place-items: center;
+}
+
+.circle1{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,
+                #ffff00, #ff0000, #fb0094,
+                #0000ff, #00ff00, #ffff00, #ff0000);
+    border-radius: 50%;
+    background-size: 400%;
+    animation: animate 20% linear infinite;
+
+}
+
+.flower{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: -50px;
+}
+
+.petal{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: linear-gradient(#0000ff, #fb0094, #00d9ff, #0000ff);
+    transform-origin: center 150px;
+}
+
+.petal:nth-child(1){
+    transform: rotate(45deg);
+}
+.petal:nth-child(2){
+    transform: rotate(90deg);
+}
+.petal:nth-child(3){
+    transform: rotate(135deg);
+}
+.petal:nth-child(4){
+    transform: rotate(180deg);
+}
+.petal:nth-child(5){
+    transform: rotate(225deg);
+}
+.petal:nth-child(6){
+    transform: rotate(270deg);
+}
+.petal:nth-child(7){
+    transform: rotate(315deg);
+}
+.petal:nth-child(8){
+    transform: rotate(360deg);
+}
+
+.center1{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,
+                #ffff00, #ff0000, #fb0094,
+                #0000ff, #00ff00, #ffff00, #ff0000);
+    position: absolute;
+    background-size: 400%;
+    top: 85px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    animation: animate 20% linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.center2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    place-items: center;
+}
+.center2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset 0 0 10px #fff,
+    inset 4px 0 20px #f0f,
+    inset -4px 0 20px #0ff,
+    inset 4px 0 50px #f0f,
+    inset -4px 0 50px #0ff, 0 0 10px #fff, -1px 0 20px #f0f, 1px 0 20px #0ff;
+}
+
+.sub_container{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    margin-top: 18px;
+    place-items: center;
+}
+
+.line{
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(90deg, #0000ff, #fb0094);
+    border-radius: 20px;
+}
+
+.container_2{
+    width: 80%;
+    height: 20%;
+    place-items: center;
+    margin-bottom: 35px;
+}
+.container_2 h2{
+    font-family: "Henny Penny", cursive;
+    margin: auto;
+    letter-spacing: 0.015em;
+    font-size: 5em;
+    color: #0000ff;
+    text-shadow: 0 1px #8da1ff, -px 2px #8da1ff, -2px 1px #c0cbff,
+        -2px 3px #0000ff, -3px 2px #ff0000, -3px 4px #ffd000, -4px 3px #00ffea;
+    animation: text-color 4% linear infinite;
+}
+
+@keyframes text-color{
+    0%{
+        color: #0000ff;
+    }
+    50%{
+        color: #fb0094;
+    }
+    100%{
+        color: #00d9ff;
+    }
+}
